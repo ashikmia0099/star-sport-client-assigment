@@ -161,7 +161,7 @@ const AddComponent = () => {
                     {/*Descrption*/}
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Descrption</span>
+                            <span className="label-text">Descrption </span>
                         </label>
                         <textarea name='description' className="textarea textarea-bordered" placeholder="Descrption"></textarea>
                     </div>
