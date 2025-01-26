@@ -78,7 +78,7 @@ const MyEquipment = () => {
     return (
         <div className=' my-16'>
             <h1 className='text-4xl font-bold uppercase my-10'>My Added all Equepment</h1>
-            <div className='grid grid-cols-3'>
+            <div className='grid md:gird-cols-2 lg:grid-cols-3'>
                 {
                     mycomponent.map(component =>
 
