@@ -32,7 +32,7 @@ const UpdateEquipment = () => {
     
     const handleUpdateCardData = e => {
         e.preventDefault();
-        console.log('Update a new tutor')
+        // console.log('Update a new tutor')
 
         const form = e.target;
         const name = form.name.value;
@@ -66,7 +66,7 @@ const UpdateEquipment = () => {
         };
 
         
-        fetch(`http://localhost:5000/cards/${_id}`, {
+        fetch(`https://star-sport-assingment-server.onrender.com/cards/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -75,7 +75,7 @@ const UpdateEquipment = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         position: "top-end",

@@ -35,7 +35,7 @@ const router = createBrowserRouter([
             {
                 path: '/updateComponent/:id',
                 element: <PrivateRouter><UpdateEquipment></UpdateEquipment></PrivateRouter>,
-                loader: ({params}) => fetch(`http://localhost:5000/cards/${params.id}`)
+                loader: ({params}) => fetch(`https://star-sport-assingment-server.onrender.com/cards/${params.id}`)
             },
             {
                 path: '/addComponent',
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element:<PrivateRouter><Details></Details></PrivateRouter>,
-                loader: ({params}) => fetch(`http://localhost:5000/cards/${params.id}`)
+                loader: ({params}) => fetch(`https://star-sport-assingment-server.onrender.com/cards/${params.id}`)
             },
             {
                 path: '/signIn',

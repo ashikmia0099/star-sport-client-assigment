@@ -24,10 +24,10 @@ const AuthProvider = ({children}) => {
     useEffect(() => {
 
 
-        fetch('http://localhost:5000/cards')
+        fetch('https://star-sport-assingment-server.onrender.com/cards')
         .then((res) => res.json())
         .then(data =>{
-            console.log(data)
+            // console.log(data)
             setallcardData(data);
         })
 
@@ -82,7 +82,7 @@ const AuthProvider = ({children}) => {
         
         const unsubscribe =  onAuthStateChanged(auth, currentUser =>{
             setUser(currentUser);
-               console.log('state capture', currentUser)
+            //    console.log('state capture', currentUser)
           setLoading(false);
         })
         return () =>{

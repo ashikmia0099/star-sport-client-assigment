@@ -19,7 +19,7 @@ const SignIn = () => {
         const form = new FormData(e.target);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password)
+        // console.log(email, password)
 
         
         SignInUser(email, password)
@@ -27,14 +27,15 @@ const SignIn = () => {
                 const user = result.user;
                 setUser(user);
                 navigate('/sportcomponent');
-                console.log(user);
+                // console.log(user);
             })
             .catch((error) => {
-                console.log('Error', error)
+                // console.log('Error', error)
+               return ('Error', error)
                
             })
 
-        console.log('Sing in with email', email, password)
+        // console.log('Sing in with email', email, password)
     }
 
 
@@ -46,12 +47,12 @@ const SignIn = () => {
             setUser(user);
             
             navigate('/sportcomponent');
-            console.log(user)
+            // console.log(user)
 
         })
         .catch((error) =>{
-            console.log('ERROR', error)
-            // return('ERROR', error)
+            // console.log('ERROR', error)
+            return('ERROR', error)
         })
     }
 

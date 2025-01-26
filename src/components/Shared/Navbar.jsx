@@ -106,8 +106,8 @@ const Navbar = () => {
                 navigate("/signIn")
             })
             .catch((error) => {
-                console.log('Error', error)
-                // return ('Error', error)
+                // console.log('Error', error)
+                return ('Error', error)
             })
     }
 

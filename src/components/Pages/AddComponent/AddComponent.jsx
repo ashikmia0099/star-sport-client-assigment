@@ -26,7 +26,7 @@ const AddComponent = () => {
         const description = form.description.value;
 
 
-        console.log(name, email, itemname, categoryName, price, Rating, customizations, deliverytime, Image, ProductQuentity, description,)
+        // console.log(name, email, itemname, categoryName, price, Rating, customizations, deliverytime, Image, ProductQuentity, description,)
 
 
         const newCardData = {
@@ -45,7 +45,7 @@ const AddComponent = () => {
         };
 
 
-        fetch('http://localhost:5000/cards', {
+        fetch('https://star-sport-assingment-server.onrender.com/cards', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -54,7 +54,7 @@ const AddComponent = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 if (data.insertedId) {
                     Swal.fire({
                         title: "New Equpment Post Successfull",

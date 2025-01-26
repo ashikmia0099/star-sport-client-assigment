@@ -22,7 +22,7 @@ const MyEquipment = () => {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:5000/cards?email=${user.email}`)
+            fetch(`https://star-sport-assingment-server.onrender.com/cards?email=${user.email}`)
                 .then((res) => res.json())
                 .then((data) => setmycomponent(data))
             // .catch((error) => console.error("Error fetching data:", error));
@@ -32,7 +32,7 @@ const MyEquipment = () => {
 
 
     const handleDelete = _id => {
-        console.log(_id)
+        // console.log(_id)
 
         Swal.fire({
             title: "Are you sure?",
@@ -45,7 +45,7 @@ const MyEquipment = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/cards/${_id}`, {
+                fetch(`https://star-sport-assingment-server.onrender.com/cards/${_id}`, {
                     method: 'DELETE',
                     headers: {
                         'content-type': 'application/json'
@@ -54,7 +54,7 @@ const MyEquipment = () => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
+                        // console.log(data);
                         if (data.deletedCount > 0) {
 
                             Swal.fire({
