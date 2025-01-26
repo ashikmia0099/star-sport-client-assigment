@@ -24,12 +24,13 @@ const AboutUs = () => {
 
                         </ul>
                     </div>
+
                     <div className='text-left'>
                     <h3 className=' text-2xl font-semibold my-2'>Our Vision:</h3>
                     <p>
                         To create a platform where sports enthusiasts can celebrate their love for games, stay informed, and connect with a community that shares the same passion.
 
-                        Whether you're a die-hard fan or just discovering the excitement of sports, Sport Show is here to keep you entertained and engaged.
+                        die-hard fan or just discovering the excitement of sports, Sport Show is here to keep you entertained and engaged.
                     </p>
                 </div>
                 </div>
