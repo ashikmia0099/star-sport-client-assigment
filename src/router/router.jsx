@@ -10,6 +10,8 @@ import MyEquipment from "../components/Pages/MyEquipment/MyEquipment";
 import UpdateEquipment from "../components/Pages/UpdateEquipment/UpdateEquipment";
 import SignIn from "../components/Pages/Auth/SignIn/SignIn";
 import PrivateRouter from "./PrivateRouter";
+import AboutUs from "../components/Pages/AboutUs/AboutUs";
+import ContractUs from "../components/Pages/ContractUs/ContractUs";
 
 
 const router = createBrowserRouter([
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
                 path: '/SignUp',
                 element:<SignUp></SignUp>
             },
+            {
+                path: '/aboutus',
+                element: <AboutUs></AboutUs>
+            },
+            {
+                path: '/contractus',
+                element: <ContractUs></ContractUs>
+            }
         ]
     }
 ])

@@ -71,9 +71,18 @@ const Navbar = () => {
                     }>
                         <li><p className='text-lg font-semibold'>Sport Component</p></li>
                     </NavLink>
+                    <NavLink to='/aboutus' className={({ isActive }) =>
+                        isActive ? " border-b-4 border-[#A4DBC1] " : ""
+                    }>
+                        <li><p className='text-lg font-semibold'>About Us</p></li>
+                    </NavLink>
+                    <NavLink to='/contractus' className={({ isActive }) =>
+                        isActive ? " border-b-4 border-[#A4DBC1] " : ""
+                    }>
+                        <li><p className='text-lg font-semibold'>Contract Us</p></li>
+                    </NavLink>
 
-                    <NavLink ><li className='text-lg font-semibold'><a>About Us</a></li></NavLink>
-                    <NavLink ><li className='text-lg font-semibold'><a>Contract Us</a></li></NavLink>
+                   
 
 
 

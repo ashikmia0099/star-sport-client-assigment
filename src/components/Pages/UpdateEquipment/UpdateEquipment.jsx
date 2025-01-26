@@ -114,7 +114,7 @@ const UpdateEquipment = () => {
                             </div>
                         </div>
                         {/* item name and item category */}
-                        <div className=' grid grid-cols-2 gap-5'>
+                        <div className=' grid md:grid-cols-2 gap-5'>
                             {/* Item Name */}
                             <div className="form-control">
                                 <label className="label">
@@ -131,7 +131,7 @@ const UpdateEquipment = () => {
                             </div>
                         </div>
                         {/* item price and reating */}
-                        <div className=' grid grid-cols-2 gap-5'>
+                        <div className=' grid md:grid-cols-2 gap-5'>
                             {/* Item Price */}
                             <div className="form-control">
                                 <label className="label">
@@ -148,7 +148,7 @@ const UpdateEquipment = () => {
                             </div>
                         </div>
                         {/* Customizetion  and Processing  time*/}
-                        <div className=' grid grid-cols-2 gap-5'>
+                        <div className=' grid md:grid-cols-2 gap-5'>
                             {/* Customizetion */}
                             <div className="form-control">
                                 <label className="label">
@@ -167,7 +167,7 @@ const UpdateEquipment = () => {
                         {/*Descrption*/}
 
                         {/* Image  and Availale Stock product contenty */}
-                        <div className=' grid grid-cols-2 gap-5'>
+                        <div className=' grid md:grid-cols-2 gap-5'>
                             {/* Image */}
                             <div className="form-control">
                                 <label className="label">
