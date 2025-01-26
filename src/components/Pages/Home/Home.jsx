@@ -81,7 +81,7 @@ const Home = () => {
 
 
             {/* section 2 */}
-            <div className='grid grid-cols-3'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3'>
                 {
 
                     allcardData.slice(0, 6).map(card => <BannerCard key={card._id} card={card}></BannerCard>)
@@ -112,7 +112,7 @@ const Home = () => {
             <div className="hero min-h-screen signupbackground">
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="px-40 py-10">
+                    <div className="lg:px-40 lg:py-10">
                         <div className="card backdrop-blur-sm bg-white/30 w-full  shrink-0 shadow-2xl my-20">
                             <Slide>
                                 <h1 className='text-5xl font-semibold text-slate-800 my-7'>Sport Club</h1>
